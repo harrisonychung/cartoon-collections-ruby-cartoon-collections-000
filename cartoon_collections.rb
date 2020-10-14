@@ -30,7 +30,7 @@ end
 #is a type of cheese. Cheeses = "cheddar", "gouda", "camembert"
 def find_the_cheese(array_of_strings)
 cheese_types = ["cheddar", "gouda", "camembert"]
-array_of_strings.find do |cheese| #.find returns only the first item for which is true
+ array_of_strings.find do |cheese| #.find returns only the first item for which is true
   cheese =="cheddar" || cheese == "gouda" || cheese == "camembert"
-end
+ end
 end
