@@ -30,16 +30,15 @@ end
 #is a type of cheese. Cheeses = "cheddar", "gouda", "camembert"
 def find_the_cheese(array_of_strings)
 cheese_types = ["cheddar", "gouda", "camembert"]
-cheese_types << "swiss" 
+cheese_types << "swiss"
  array_of_strings.find do |cheese| #.find returns only the first item for which is true
   cheese =="cheddar" || cheese == "gouda" || cheese == "camembert" || cheese == "swiss"
  end
 end
 
- 
+
 def words_with_b(words)
   words.findall do |word, index|
   #if words.include?(letter_b)
   end
-end  
-  
+end
