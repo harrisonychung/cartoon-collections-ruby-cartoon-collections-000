@@ -30,7 +30,19 @@ end
 #is a type of cheese. Cheeses = "cheddar", "gouda", "camembert"
 def find_the_cheese(array_of_strings)
 cheese_types = ["cheddar", "gouda", "camembert"]
-array_of_strings.find do |cheese| #.find returns only the first item for which is true
-  cheese =="cheddar" || cheese == "gouda" || cheese == "camembert"
+cheese_not_found = nil
+
+array_of_strings.each do |cheese, index|
+  if cheese_types.include?(cheese)
+    return cheese
+  end
 end
+cheese_not_found
 end
+
+
+#cheese_types = ["cheddar", "gouda", "camembert"]
+#array_of_strings.find do |cheese| #.find returns only the first item for which is true
+  #cheese =="cheddar" || cheese == "gouda" || cheese == "camembert"
+#end
+#end
