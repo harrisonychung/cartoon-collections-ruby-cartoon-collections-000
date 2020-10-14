@@ -40,5 +40,6 @@ end
 def words_with_b(words)
   words.findall do |word, index|
   #if words.include?(letter_b)
+  "bob".start_with?("b")
   end
 end
